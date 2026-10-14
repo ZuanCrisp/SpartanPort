@@ -1,0 +1,6 @@
+Original tag name: windows-v2.2.0-community-test1
+Original tag object: 633339d1c813ba7c0b2c822ec34f466c057068b1
+Original target commit: 633339d1c813ba7c0b2c822ec34f466c057068b1
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
