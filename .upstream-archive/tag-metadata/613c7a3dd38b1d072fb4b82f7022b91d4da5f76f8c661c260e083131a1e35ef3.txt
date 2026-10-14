@@ -1,0 +1,6 @@
+Original tag name: linux-v2.2.0-test1
+Original tag object: 419f182e6d39ae9ba1b8b3fc49acb421cc318456
+Original target commit: 419f182e6d39ae9ba1b8b3fc49acb421cc318456
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
