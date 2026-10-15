@@ -1,0 +1,6 @@
+Original tag name: windows-v2.3.0-ultrawide-test1
+Original tag object: cc85c0fb7bb8d89702b50584d98297c4403adeff
+Original target commit: cc85c0fb7bb8d89702b50584d98297c4403adeff
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
