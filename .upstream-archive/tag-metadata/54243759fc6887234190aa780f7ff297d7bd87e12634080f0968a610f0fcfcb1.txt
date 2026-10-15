@@ -1,0 +1,6 @@
+Original tag name: windows-v2.3.0-intel-hd630-test2
+Original tag object: c0a8684e242011aedaf2c4ee82aade0f06714a73
+Original target commit: c0a8684e242011aedaf2c4ee82aade0f06714a73
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
