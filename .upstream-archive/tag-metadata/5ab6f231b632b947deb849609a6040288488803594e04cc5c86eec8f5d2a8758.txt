@@ -1,0 +1,6 @@
+Original tag name: windows-v2.4.1
+Original tag object: 1436e7e79807de8e832fc1b6da2f8f20a4293172
+Original target commit: 1436e7e79807de8e832fc1b6da2f8f20a4293172
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
