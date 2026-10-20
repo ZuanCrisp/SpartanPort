@@ -1,0 +1,6 @@
+Original tag name: macos-v2.6.0-apple-silicon-test1
+Original tag object: 76830ef10f99cf5ca26f0cd2e41a4ab83207ae5f
+Original target commit: 76830ef10f99cf5ca26f0cd2e41a4ab83207ae5f
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
