@@ -1,0 +1,6 @@
+Original tag name: windows-v2.6.0-qte-bmi1-test1
+Original tag object: 080470cac4eb932c5849f1fcddeac883c349cf28
+Original target commit: 080470cac4eb932c5849f1fcddeac883c349cf28
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
