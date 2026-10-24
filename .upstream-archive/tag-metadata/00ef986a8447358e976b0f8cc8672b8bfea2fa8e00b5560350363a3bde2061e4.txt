@@ -1,0 +1,6 @@
+Original tag name: windows-v2.7.0-issue209-test2
+Original tag object: ae22cfcf894f8bf6a3c8bba3d62ed271f105e4ed
+Original target commit: ae22cfcf894f8bf6a3c8bba3d62ed271f105e4ed
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
