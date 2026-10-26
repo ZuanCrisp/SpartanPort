@@ -1,0 +1,6 @@
+Original tag name: windows-v2.8.0-intel-test2
+Original tag object: 09f0fd1031fbf9d0d82773da32e9324c655e194c
+Original target commit: 09f0fd1031fbf9d0d82773da32e9324c655e194c
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
