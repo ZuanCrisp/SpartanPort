@@ -1,0 +1,6 @@
+Original tag name: windows-v2.8.0-launcher-identity-test1
+Original tag object: 8812a197dd38ab6f0a4a0cb23f78067bd42e4ff3
+Original target commit: 8812a197dd38ab6f0a4a0cb23f78067bd42e4ff3
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
