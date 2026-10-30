@@ -1,0 +1,109 @@
+
+name: Mirror SpartanPort v2.7.0 Assets
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/mirror-v270-assets.yml"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mirror-assets:
+    name: Download and Verify Official Assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Download official SpartanPort assets
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p dist
+
+          BASE_URL="https://github.com/FelipePrado0/SpartanPort/releases/download/windows-v2.7.0"
+
+          assets=(
+            "spartanport-windows.zip"
+            "spartanport-windows.zip.sha256"
+            "spartanport-x86_64.AppImage"
+            "spartanport-x86_64.AppImage.sha256"
+          )
+
+          for asset in "${assets[@]}"; do
+            echo "Downloading: $asset"
+
+            curl \
+              --fail \
+              --show-error \
+              --location \
+              --retry 3 \
+              --retry-all-errors \
+              --connect-timeout 30 \
+              --output "dist/$asset" \
+              "$BASE_URL/$asset"
+
+            test -s "dist/$asset"
+          done
+
+      - name: Verify official checksum files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          cd dist
+
+          # Verify the two official checksum-file assets themselves.
+          printf '%s  %s\n' \
+            "8f46abe7ed76346b5ce7e8f0827ed3dc96a90d7c1b0f20ca3489f735451e1a81" \
+            "spartanport-windows.zip.sha256" \
+            "0489d74aef954e6e1d8baa61e5346b0d538f257098d4f2f1a9a0560359bc63cb" \
+            "spartanport-x86_64.AppImage.sha256" \
+            | sha256sum --check
+
+          WINDOWS_HASH=$(awk 'NF {print $1; exit}' spartanport-windows.zip.sha256)
+          LINUX_HASH=$(awk 'NF {print $1; exit}' spartanport-x86_64.AppImage.sha256)
+
+          # Check downloaded binary checksums against upstream.
+          test "$WINDOWS_HASH" = \
+            "e07df61d75499bd61f3be00b4f4d4e2e5b9ad45f2cbee8f609bf4205499a9241"
+
+          test "$LINUX_HASH" = \
+            "d13152f40006acd15c301f3f6fef8144330229774c4e78f3e6aa5df255509964"
+
+          printf '%s  %s\n' \
+            "$WINDOWS_HASH" "spartanport-windows.zip" \
+            "$LINUX_HASH" "spartanport-x86_64.AppImage" \
+            | sha256sum --check
+
+          # Generate an additional checksum manifest.
+          sha256sum \
+            spartanport-windows.zip \
+            spartanport-x86_64.AppImage \
+            > SHA256SUMS.txt
+
+          echo "All official checksum verifications passed."
+
+      - name: Upload assets to GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view v2.7.0 \
+            --repo "$GITHUB_REPOSITORY"
+
+          gh release upload v2.7.0 dist/* \
+            --repo "$GITHUB_REPOSITORY" \
+            --clobber
+
+      - name: Verify uploaded release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view v2.7.0 \
+            --repo "$GITHUB_REPOSITORY"
