@@ -1,0 +1,6 @@
+Original tag name: windows-v2.8.0-issue1131-test2
+Original tag object: c8e6ef871f9ce9746c2cf28e2e52a2551d4a0316
+Original target commit: c8e6ef871f9ce9746c2cf28e2e52a2551d4a0316
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
