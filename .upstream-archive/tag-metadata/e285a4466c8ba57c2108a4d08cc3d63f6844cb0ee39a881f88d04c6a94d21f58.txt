@@ -1,0 +1,6 @@
+Original tag name: windows-v2.8.0-collision-test1
+Original tag object: b47e01cd18d27972e975b6629aed92022db75b7e
+Original target commit: b47e01cd18d27972e975b6629aed92022db75b7e
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
