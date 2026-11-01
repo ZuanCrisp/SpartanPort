@@ -1,0 +1,6 @@
+Original tag name: windows-v3.0.0-prs1121-1124-test1
+Original tag object: e5572bc725f477a81794d49ab432d1e193865feb
+Original target commit: e5572bc725f477a81794d49ab432d1e193865feb
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
