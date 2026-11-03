@@ -1,0 +1,6 @@
+Original tag name: windows-v3.0.0-launcher-test1
+Original tag object: cbcc3c6d98096f1268039076a6eed61a5a942d3d
+Original target commit: cbcc3c6d98096f1268039076a6eed61a5a942d3d
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
