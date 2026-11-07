@@ -1,0 +1,6 @@
+Original tag name: windows-v3.1.0-test1
+Original tag object: 73a1110d68cf47b7b0d68cbb73b75ab3f43e48f6
+Original target commit: 73a1110d68cf47b7b0d68cbb73b75ab3f43e48f6
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
