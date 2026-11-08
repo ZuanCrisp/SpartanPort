@@ -1,0 +1,6 @@
+Original tag name: windows-v3.1.0-shaders-test1
+Original tag object: 6b317ddfc0af403bf91169887cba3e4643f5034e
+Original target commit: 6b317ddfc0af403bf91169887cba3e4643f5034e
+Original object type: commit
+
+Lightweight tag; the original target commit is recorded above.
